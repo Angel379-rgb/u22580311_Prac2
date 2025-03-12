@@ -1,0 +1,111 @@
+﻿.menu {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 10px;
+}
+
+    .menu a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-right: 1px solid white;
+    }
+
+        .menu a:last-child {
+            border-right: none;
+        }
+
+        .menu a:hover {
+            background-color: grey;
+        }
+
+        .menu a.active {
+            background-color: darkgrey;
+        }
+
+.section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.left-image {
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.right-image {
+    float: right;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+img:hover {
+    transform: scaleX(-1);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: grey;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
