@@ -1,0 +1,27 @@
+﻿@model IEnumerable<u22580311_Prac2.Models.People>
+@{
+    ViewBag.Title = "ListOfPeople";
+}
+
+<h2>ListOfPeople</h2>
+
+<table>
+    <tr>
+        <th>Student Number</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>Link</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.StudentNumber</td>
+            <td>@person.Name</td>
+            <td>@person.Surname</td>
+            <td>@person.Email</td>
+            <td><a href="@Url.Content(person.MyLink)" class="btn">LINK</a></td>
+        </tr>
+    }
+</table>
+
